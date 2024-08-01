@@ -1,10 +1,12 @@
-.navbar{
+ .navbar{
     padding: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 0 1px 3px -2px black;
 }
-
+   
 .nav-logo{
     display: flex;
     align-items: center;
@@ -12,12 +14,12 @@
 }
 
 .nav-logo img{
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .nav-logo p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,7 +29,7 @@
     align-items: center;
     list-style: none;
     gap: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -55,15 +57,15 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-login-cart button{
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     outline: none;
     border: 1px solid gray;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     background-color: #2BB8B3;
@@ -76,15 +78,49 @@
 }
 
 .nav-cart-count{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -35px;
-    margin-left: -35px;
-    border-radius: 11px;
-    font-size: 14px;
+    margin-top: -25px;
+    margin-left: -25px;
+    border-radius: 50%;
+    font-size: 12px;
     color: white;
     background: red;
-}
+} 
+
+  .menu-toggle {
+    display: none; 
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-menu.show {
+      display: flex; 
+    }
+  
+    .menu-toggle {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .nav-login-cart {
+      order: 1; 
+    }
+  }
+  

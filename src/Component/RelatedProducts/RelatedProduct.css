@@ -3,24 +3,64 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 90vh;
+    padding: 20px;
 }
 
 .relatedProduct h1{
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 600;
     color: black;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .relatedProduct hr{
-    width: 200px;
-    height: 6px;
+    width: 150px;
+    height: 4px;
     border-radius: 10px;
     background: #252525;
+    margin-bottom: 30px;
 }
 
 .relatedProducts-item{
-    margin-top: 50px;
+    justify-content: center;
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .relatedProduct h1 {
+        font-size: 42px;
+    }
+
+    .relatedProduct hr {
+        width: 180px;
+        height: 5px;
+    }
+
+    .relatedProducts-item {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .relatedProduct {
+        height: auto; 
+        padding: 40px;
+    }
+
+    .relatedProduct h1 {
+        font-size: 50px;
+    }
+
+    .relatedProduct hr {
+        width: 200px;
+        height: 6px;
+    }
+
+    .relatedProducts-item {
+        justify-content: space-between;
+        gap: 30px;
+    }
 }

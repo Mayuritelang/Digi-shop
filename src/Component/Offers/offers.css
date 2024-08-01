@@ -1,11 +1,17 @@
 .offers{
-    width: 65%;
-    height: 60vh;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
     display: flex;
+    flex-direction: row;
     margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
+    padding: 20px;
+    margin-bottom: 100px;
     background: radial-gradient(circle, rgba(245,247,248,1) 0%, rgba(25,159,154,1) 100%); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
 }
 
 .offers-left{
@@ -13,31 +19,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 
 .offers-left h1{
     color: black;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .offers-left p{
     color: black;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
+    margin: 10px 0;
 }
 
 .offers-left button{
     width: 180px;
     height: 50px;
-    border-radius: 35px;
+    border-radius: 25px;
     background-color: white;
     color: black;
     border: none;
-    font-size: 22px;
+    font-size: 1.125rem;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offers-left button:hover{
+    background-color: #f0f0f0;
 }
 
 .offers-right{
@@ -45,5 +59,49 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 50px;
+    padding: 20px;
+}
+
+.offers img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .offers {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .offers-left, .offers-right {
+        padding: 10px; 
+    }
+
+    .offers-left h1 {
+        font-size: 2.5rem; 
+
+    .offers-left p {
+        font-size: 1rem; 
+    }
+
+    .offers-left button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers-left h1 {
+        font-size: 2rem; 
+    }
+
+    .offers-left p {
+        font-size: 0.9rem; 
+    }
+
+    .offers-left button {
+        font-size: 0.9rem; 
+        width: 160px;
+    }
+}
 }

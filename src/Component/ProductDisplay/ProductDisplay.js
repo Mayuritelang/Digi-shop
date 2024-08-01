@@ -11,14 +11,14 @@ export const ProductDisplay = (props) => {
   return (
     <div className='productDisplay'>
         <div className='productDisplay-left'>
+        <div className='productDisplay-img'>
+          <img className='productDisplay-main-img' src={product.image}/>
+        </div>
           <div className='productDisplay-img-list'>
         <img src={product.image}/>
         <img src={product.image}/>
         <img src={product.image}/>
         <img src={product.image}/>
-        </div>
-        <div className='productDisplay-img'>
-          <img className='productDisplay-main-img' src={product.image}/>
         </div>
         </div>
          <div className='productDisplay-right'>

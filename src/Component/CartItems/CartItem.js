@@ -21,7 +21,7 @@ export const CartItem = () => {
             {all_product.map((e) => {
                 if (cartItem[e.id] > 0) {
                     return <div>
-                        <div /* key={e.id} */ className='cartitems-format cartitems-format-main'>
+                        <div className='cartitems-format cartitems-format-main'>
                             <img src={e.image} className='cartitem-product-icon' />
                             <p>{e.name}</p>
                             <p>${e.new_price}</p>

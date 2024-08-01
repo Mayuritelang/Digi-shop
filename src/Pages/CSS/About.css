@@ -1,0 +1,49 @@
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.vission, .mission {
+    width: 100%; 
+    margin: 20px 0;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2BB8B3;
+    margin: 20px 0;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    
+    h1{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+}
